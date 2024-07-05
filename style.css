@@ -14,7 +14,7 @@ body{
 
 a{
     text-decoration: none;
-    color: gray;
+    color: rgb(170, 170, 170);
     font-size: large;
     font-family: Helvetica, sans-serif;
 }
@@ -28,6 +28,14 @@ a{
     padding: 15px;
 }
 
+#logo{
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .section-one{
     display: flex;
@@ -39,22 +47,24 @@ a{
     gap: 10px;
 }
 
-
 .left-side{
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     padding: 0px;
+    width: 400px;
+    height: auto;
 }
 
 .title{
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .subtext{
+    color: white;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -68,9 +78,8 @@ a{
 }
 
 .cat{
-    object-fit: fill;
-    max-width: 100%;
-    width: 100%;
+    object-fit: contain;
+    width: 400px;
     height: auto;
 }
 
@@ -135,13 +144,74 @@ button{
     font-size: 18px;
 }
 
+.section-three{
+    background-color: #e5e7eb;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 270px;
+}
+
+.section-three p{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin: 0px;
+    text-align: center;
+}
+
+.section-three h2{
+    margin-top: 0px;
+    font-weight: 700;
+    text-align: end;
+}
+
+.section-four{
+    display: flex;
+    flex: 1;
+    padding: 70px 220px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four .container{
+    display: flex;
+    flex: 1;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #3882f6;
+    padding: 40px 100px;
+    gap: 20px;
+}
+
+.sign{
+    background-color: #3882f6;
+    border-radius: 12px;
+    border:2px solid white;
+    padding: 8px 25px;
+    color:white;
+    font-weight: 750;
+    font-family: Helvetica, sans-serif;
+    width: 120px;
+    text-align: center;
+}
+
+.container .left-call{
+    color:white;
+}
+
+.left-call h2{
+    margin:0px;   
+}
+
 .footer{
     display: flex;
-    flex:1;
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
-    height: 62px;
+    height: 50px;
     padding: 15px;
     font-size: large;
     font-family: Helvetica, sans-serif;
